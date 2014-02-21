@@ -23,14 +23,14 @@ public class TestConversion {
 	int test = 0;
 
 	@Before
-	public void onBefore() {
+	public void onBefore() { 
 		System.out.println("----- Start Test -----");
 		readFile(true);
 		readFile(false);
 	}
 
 	@After
-	public void onAfter() {
+	public void onAfter() { 
 		liste.clear();
 		toCompare.clear();
 		System.out.println("----- Finish Test -----\n");

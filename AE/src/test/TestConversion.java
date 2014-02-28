@@ -16,163 +16,180 @@ import org.junit.rules.TestRule;
 
 import com.carrotsearch.junitbenchmarks.BenchmarkOptions;
 import com.carrotsearch.junitbenchmarks.BenchmarkRule;
+import com.carrotsearch.junitbenchmarks.annotation.AxisRange;
+import com.carrotsearch.junitbenchmarks.annotation.BenchmarkHistoryChart;
+import com.carrotsearch.junitbenchmarks.annotation.BenchmarkMethodChart;
+import com.carrotsearch.junitbenchmarks.annotation.LabelType;
 
 import core.LevenSt;
 import core.MetaphoneAlg;
+import core.SemiGlobalAlg;
 import core.SoundexAlg;
 
-@BenchmarkOptions(callgc = false, benchmarkRounds = 200, warmupRounds = 3)
+@AxisRange(min = 0, max = 9)
+@BenchmarkMethodChart(filePrefix = "benchmark-lists")
+@BenchmarkHistoryChart(labelWith = LabelType.RUN_ID, maxRuns = 20, filePrefix = "benchmark-chart2")
+@BenchmarkOptions(callgc = true, benchmarkRounds = 1, warmupRounds = 0)
 public class TestConversion {
-    
-    @Rule
-    public TestRule benchmarkRun = new BenchmarkRule();
-     
-    List<String> liste = new ArrayList<String>();
-    List<String> toCompare = new ArrayList<String>();
-    int i = 4;
-    int test = 0;
 
-    @Before
-    public void onBefore() {
-//	System.out.println("----- Start Test -----");
-	readFile(true);
-	readFile(false);
-    }
+	@Rule
+	public TestRule benchmarkRun = new BenchmarkRule();
 
-    @After
-    public void onAfter() {
-	liste.clear();
-	toCompare.clear();
-//	System.out.println("----- Finish Test -----\n");
-    }
+	List<String> liste = new ArrayList<String>();
+	int listeSize = 0;
+	List<String> toCompare = new ArrayList<String>();
+	int listeCompSize = 0;
 
-    public void test() {
-	SoundexAlg alg = new SoundexAlg();
-	System.out.println("Unterschied Soundex = "
-		+ alg.compareStrings(liste.get(i), toCompare.get(i)));
-
-	LevenSt alg2 = new LevenSt();
-	System.out.println("Unterschied Levenshtein = "
-		+ alg2.getLevenSt(liste.get(i), toCompare.get(i)));
-
-	MetaphoneAlg alg3 = new MetaphoneAlg();
-	System.out.println("Unterschied Metaphone = "
-		+ alg3.getDiffrence(liste.get(i), toCompare.get(i)));
-    }
-
-    @Test
-    public void Metaphone() {
-	int amount1 = 0;
-	MetaphoneAlg alg = new MetaphoneAlg();
-	for (String str : liste) {
-	    for (String str2 : str.split(" ")) {
-		alg.getStringRepresantation(str2);
-		amount1++;
-	    }
-	}
-	int amount2 = 0;
-	MetaphoneAlg alg2 = new MetaphoneAlg();
-	for (String str : toCompare) {
-	    for (String str2 : str.split(" ")) {
-		alg2.getStringRepresantation(str2);
-		amount2++;
-	    }
-	}
-//	System.out.println("Anzahl 1 = " + amount1 + " Anzahl 2 = " + amount2);
-//	System.out.println("Unterschied = "
-//		+ alg.calculateDiffrence(alg2.getMap()));
-    }
-
-    @Test
-    public void Soundex() {
-	int amount1 = 0;
-	SoundexAlg alg = new SoundexAlg();
-	for (String str : liste) {
-	    for (String str2 : str.split(" ")) {
-		alg.getStringRepresantation(str2);
-		amount1++;
-	    }
-	}
-	int amount2 = 0;
-	SoundexAlg alg2 = new SoundexAlg();
-	for (String str : toCompare) {
-	    for (String str2 : str.split(" ")) {
-		alg2.getStringRepresantation(str2);
-		amount2++;
-	    }
+	@Before
+	public void onBefore() {
+		readFile(true);
+		readFile(false);
 	}
 
-//	System.out.println("Anzahl 1 = " + amount1 + " Anzahl 2 = " + amount2);
-//	System.out.println("Unterschied = "
-//		+ alg.calculateDiffrence(alg2.getMap()));
-    }
+	@After
+	public void onAfter() {
+		liste.clear();
+		toCompare.clear();
+	}
 
-    @Test
-    public void Leven() {
-	int amount1 = 0;
-	LevenSt alg = new LevenSt();
-	for (String str : liste) {
-	    for (String str2 : str.split(" ")) {
-		alg.addString(str2);
-		amount1++;
-	    }
-	}
-	int amount2 = 0;
-	LevenSt alg2 = new LevenSt();
-	for (String str : toCompare) {
-	    for (String str2 : str.split(" ")) {
-		alg2.addString(str2);
-		amount2++;
-	    }
-	}
-//	System.out.println("Anzahl 1 = " + amount1 + " Anzahl 2 = " + amount2);
-//	System.out.println("Unterschied = "
-//		+ alg.calculateDiffrence(alg2.getList()));
-    }
-
-    private void readFile(boolean original) {
-	String file;
-	if (original) {
-	    file = "test.txt";
-	} else {
-	    file = "test2.txt";
-	}
-	BufferedReader br = null;
-	try {
-	    br = new BufferedReader(new FileReader(new File(file)));
-	    String line = null;
-	    while ((line = br.readLine()) != null) {
-		if (line.contains("ä")) {
-		    line = line.replaceAll("ä", "ae");
+	@Test
+	public void Metaphone() {
+		MetaphoneAlg alg = new MetaphoneAlg();
+		for (String str : liste) {
+			for (String str2 : str.split(" ")) {
+				alg.getStringRepresantation(str2);
+			}
 		}
-		if (line.contains("ü")) {
-		    line = line.replaceAll("ü", "ue");
-		}
-		if (line.contains("ö")) {
-		    line = line.replaceAll("ö", "oe");
-		}
-		if (line.contains("ß")) {
-		    line = line.replaceAll("ß", "ss");
+		MetaphoneAlg alg2 = new MetaphoneAlg();
+		for (String str : toCompare) {
+			for (String str2 : str.split(" ")) {
+				alg2.getStringRepresantation(str2);
+			}
 		}
 
+		int unterschied = alg.calculateDiffrence(alg2.getMap());
+		// System.out.println("\n Unterschied = " + unterschied);
+		// System.out.format("Prozentual zu 1 = %f \n",
+		// (100 * ((double) unterschied / liste.size())));
+		// System.out.format("Prozentual zu 2 = %f \n",
+		// (100 * ((double) unterschied / toCompare.size())));
+
+	}
+
+	@Test
+	public void Soundex() {
+		SoundexAlg alg = new SoundexAlg();
+		for (String str : liste) {
+			for (String str2 : str.split(" ")) {
+				alg.getStringRepresantation(str2);
+			}
+		}
+		SoundexAlg alg2 = new SoundexAlg();
+		for (String str : toCompare) {
+			for (String str2 : str.split(" ")) {
+				alg2.getStringRepresantation(str2);
+			}
+		}
+
+		int unterschied = alg.calculateDiffrence(alg2.getMap());
+		// System.out.println("\n Unterschied = " + unterschied);
+		// System.out.format("Prozentual zu 1 = %f \n",
+		// (100 * ((double) unterschied / liste.size())));
+		// System.out.format("Prozentual zu 2 = %f \n",
+		// (100 * ((double) unterschied / toCompare.size())));
+	}
+
+	@Test
+	public void Levensthein() {
+		LevenSt alg = new LevenSt();
+		for (String str : liste) {
+			for (String str2 : str.split(" ")) {
+				alg.addString(str2);
+			}
+		}
+		LevenSt alg2 = new LevenSt();
+		for (String str : toCompare) {
+			for (String str2 : str.split(" ")) {
+				alg2.addString(str2);
+			}
+		}
+
+		int unterschied = alg.calculateDiffrence(alg2.getList());
+		// System.out.println("\n Unterschied = " + unterschied);
+		// System.out.format("Prozentual zu 1 = %f \n",
+		// (100 * ((double) unterschied / listeSize)));
+		// System.out.format("Prozentual zu 2 = %f \n",
+		// (100 * ((double) unterschied / listeCompSize)));
+	}
+
+	@Test
+	public void SemiGlobalAlignment() {
+		SemiGlobalAlg alg = new SemiGlobalAlg();
+		for (String str : liste) {
+			for (String str2 : str.split(" ")) {
+				alg.addString(str2);
+			}
+		}
+		SemiGlobalAlg alg2 = new SemiGlobalAlg();
+		for (String str : toCompare) {
+			for (String str2 : str.split(" ")) {
+				alg2.addString(str2);
+			}
+		}
+
+		int unterschied = alg.calculateDiffrence(alg2.getList());
+		// System.out.println("\n Unterschied = " + unterschied);
+		// System.out.format("Prozentual zu 1 = %f\n",
+		// (100 - (100 * ((double) unterschied / listeSize))));
+		// System.out.format("Prozentual zu 2 = %f\n",
+		// (100 - (100 * ((double) unterschied / listeCompSize))));
+	}
+
+	private void readFile(boolean original) {
+		String file;
 		if (original) {
-		    liste.add(line);
+			file = "data/10000a";
 		} else {
-		    toCompare.add(line);
+			file = "data/10001a";
 		}
-	    }
-	} catch (FileNotFoundException e) {
-	    e.printStackTrace();
-	} catch (IOException e) {
-	    e.printStackTrace();
-	} finally {
-	    if (br != null) {
+		BufferedReader br = null;
 		try {
-		    br.close();
+			br = new BufferedReader(new FileReader(new File(file)));
+			String line = null;
+			while ((line = br.readLine()) != null) {
+				if (line.contains("Ã¤")) {
+					line = line.replaceAll("Ã¤", "ae");
+				}
+				if (line.contains("Ã¼")) {
+					line = line.replaceAll("Ã¼", "ue");
+				}
+				if (line.contains("Ã¶")) {
+					line = line.replaceAll("Ã¶", "oe");
+				}
+				if (line.contains("ÃŸ")) {
+					line = line.replaceAll("ÃŸ", "ss");
+				}
+
+				if (original) {
+					liste.add(line);
+					listeSize += line.length();
+				} else {
+					toCompare.add(line);
+					listeCompSize += line.length();
+				}
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		} catch (IOException e) {
-		    e.printStackTrace();
+			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 		}
-	    }
 	}
-    }
 }

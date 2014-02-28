@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:24Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-01T05:00:00Z" TimeTo="2013-02-02T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22200" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="48" TimeFrom="2013-02-01T05:00:00Z" TimeTo="2013-02-01T06:00:00Z" />
+<Data Value="72" TimeFrom="2013-02-01T06:00:00Z" TimeTo="2013-02-01T07:00:00Z" />
+<Data Value="11" TimeFrom="2013-02-01T07:00:00Z" TimeTo="2013-02-01T08:00:00Z" />
+<Data Value="4" TimeFrom="2013-02-01T08:00:00Z" TimeTo="2013-02-01T09:00:00Z" />
+<Data Value="84" TimeFrom="2013-02-01T09:00:00Z" TimeTo="2013-02-01T10:00:00Z" />
+<Data Value="20" TimeFrom="2013-02-01T10:00:00Z" TimeTo="2013-02-01T11:00:00Z" />
+<Data Value="75" TimeFrom="2013-02-01T11:00:00Z" TimeTo="2013-02-01T12:00:00Z" />
+<Data Value="70" TimeFrom="2013-02-01T12:00:00Z" TimeTo="2013-02-01T13:00:00Z" />
+<Data Value="77" TimeFrom="2013-02-01T13:00:00Z" TimeTo="2013-02-01T14:00:00Z" />
+<Data Value="18" TimeFrom="2013-02-01T14:00:00Z" TimeTo="2013-02-01T15:00:00Z" />
+<Data Value="25" TimeFrom="2013-02-01T15:00:00Z" TimeTo="2013-02-01T16:00:00Z" />
+<Data Value="98" TimeFrom="2013-02-01T16:00:00Z" TimeTo="2013-02-01T17:00:00Z" />
+<Data Value="72" TimeFrom="2013-02-01T17:00:00Z" TimeTo="2013-02-01T18:00:00Z" />
+<Data Value="86" TimeFrom="2013-02-01T18:00:00Z" TimeTo="2013-02-01T19:00:00Z" />
+<Data Value="82" TimeFrom="2013-02-01T19:00:00Z" TimeTo="2013-02-01T20:00:00Z" />
+<Data Value="44" TimeFrom="2013-02-01T20:00:00Z" TimeTo="2013-02-01T21:00:00Z" />
+<Data Value="64" TimeFrom="2013-02-01T21:00:00Z" TimeTo="2013-02-01T22:00:00Z" />
+<Data Value="97" TimeFrom="2013-02-01T22:00:00Z" TimeTo="2013-02-01T23:00:00Z" />
+<Data Value="59" TimeFrom="2013-02-01T23:00:00Z" TimeTo="2013-02-02T00:00:00Z" />
+<Data Value="19" TimeFrom="2013-02-02T00:00:00Z" TimeTo="2013-02-02T01:00:00Z" />
+<Data Value="0" TimeFrom="2013-02-02T01:00:00Z" TimeTo="2013-02-02T02:00:00Z" />
+<Data Value="60" TimeFrom="2013-02-02T02:00:00Z" TimeTo="2013-02-02T03:00:00Z" />
+<Data Value="68" TimeFrom="2013-02-02T03:00:00Z" TimeTo="2013-02-02T04:00:00Z" />
+<Data Value="32" TimeFrom="2013-02-02T04:00:00Z" TimeTo="2013-02-02T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:24Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-02T05:00:00Z" TimeTo="2013-02-03T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22201" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="93" TimeFrom="2013-02-02T05:00:00Z" TimeTo="2013-02-02T06:00:00Z" />
+<Data Value="40" TimeFrom="2013-02-02T06:00:00Z" TimeTo="2013-02-02T07:00:00Z" />
+<Data Value="15" TimeFrom="2013-02-02T07:00:00Z" TimeTo="2013-02-02T08:00:00Z" />
+<Data Value="28" TimeFrom="2013-02-02T08:00:00Z" TimeTo="2013-02-02T09:00:00Z" />
+<Data Value="12" TimeFrom="2013-02-02T09:00:00Z" TimeTo="2013-02-02T10:00:00Z" />
+<Data Value="95" TimeFrom="2013-02-02T10:00:00Z" TimeTo="2013-02-02T11:00:00Z" />
+<Data Value="97" TimeFrom="2013-02-02T11:00:00Z" TimeTo="2013-02-02T12:00:00Z" />
+<Data Value="91" TimeFrom="2013-02-02T12:00:00Z" TimeTo="2013-02-02T13:00:00Z" />
+<Data Value="86" TimeFrom="2013-02-02T13:00:00Z" TimeTo="2013-02-02T14:00:00Z" />
+<Data Value="94" TimeFrom="2013-02-02T14:00:00Z" TimeTo="2013-02-02T15:00:00Z" />
+<Data Value="18" TimeFrom="2013-02-02T15:00:00Z" TimeTo="2013-02-02T16:00:00Z" />
+<Data Value="63" TimeFrom="2013-02-02T16:00:00Z" TimeTo="2013-02-02T17:00:00Z" />
+<Data Value="37" TimeFrom="2013-02-02T17:00:00Z" TimeTo="2013-02-02T18:00:00Z" />
+<Data Value="63" TimeFrom="2013-02-02T18:00:00Z" TimeTo="2013-02-02T19:00:00Z" />
+<Data Value="83" TimeFrom="2013-02-02T19:00:00Z" TimeTo="2013-02-02T20:00:00Z" />
+<Data Value="80" TimeFrom="2013-02-02T20:00:00Z" TimeTo="2013-02-02T21:00:00Z" />
+<Data Value="27" TimeFrom="2013-02-02T21:00:00Z" TimeTo="2013-02-02T22:00:00Z" />
+<Data Value="67" TimeFrom="2013-02-02T22:00:00Z" TimeTo="2013-02-02T23:00:00Z" />
+<Data Value="84" TimeFrom="2013-02-02T23:00:00Z" TimeTo="2013-02-03T00:00:00Z" />
+<Data Value="44" TimeFrom="2013-02-03T00:00:00Z" TimeTo="2013-02-03T01:00:00Z" />
+<Data Value="39" TimeFrom="2013-02-03T01:00:00Z" TimeTo="2013-02-03T02:00:00Z" />
+<Data Value="30" TimeFrom="2013-02-03T02:00:00Z" TimeTo="2013-02-03T03:00:00Z" />
+<Data Value="66" TimeFrom="2013-02-03T03:00:00Z" TimeTo="2013-02-03T04:00:00Z" />
+<Data Value="60" TimeFrom="2013-02-03T04:00:00Z" TimeTo="2013-02-03T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:24Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-03T05:00:00Z" TimeTo="2013-02-04T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22202" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="2" TimeFrom="2013-02-03T05:00:00Z" TimeTo="2013-02-03T06:00:00Z" />
+<Data Value="78" TimeFrom="2013-02-03T06:00:00Z" TimeTo="2013-02-03T07:00:00Z" />
+<Data Value="95" TimeFrom="2013-02-03T07:00:00Z" TimeTo="2013-02-03T08:00:00Z" />
+<Data Value="89" TimeFrom="2013-02-03T08:00:00Z" TimeTo="2013-02-03T09:00:00Z" />
+<Data Value="82" TimeFrom="2013-02-03T09:00:00Z" TimeTo="2013-02-03T10:00:00Z" />
+<Data Value="24" TimeFrom="2013-02-03T10:00:00Z" TimeTo="2013-02-03T11:00:00Z" />
+<Data Value="14" TimeFrom="2013-02-03T11:00:00Z" TimeTo="2013-02-03T12:00:00Z" />
+<Data Value="88" TimeFrom="2013-02-03T12:00:00Z" TimeTo="2013-02-03T13:00:00Z" />
+<Data Value="57" TimeFrom="2013-02-03T13:00:00Z" TimeTo="2013-02-03T14:00:00Z" />
+<Data Value="42" TimeFrom="2013-02-03T14:00:00Z" TimeTo="2013-02-03T15:00:00Z" />
+<Data Value="22" TimeFrom="2013-02-03T15:00:00Z" TimeTo="2013-02-03T16:00:00Z" />
+<Data Value="46" TimeFrom="2013-02-03T16:00:00Z" TimeTo="2013-02-03T17:00:00Z" />
+<Data Value="93" TimeFrom="2013-02-03T17:00:00Z" TimeTo="2013-02-03T18:00:00Z" />
+<Data Value="7" TimeFrom="2013-02-03T18:00:00Z" TimeTo="2013-02-03T19:00:00Z" />
+<Data Value="84" TimeFrom="2013-02-03T19:00:00Z" TimeTo="2013-02-03T20:00:00Z" />
+<Data Value="75" TimeFrom="2013-02-03T20:00:00Z" TimeTo="2013-02-03T21:00:00Z" />
+<Data Value="75" TimeFrom="2013-02-03T21:00:00Z" TimeTo="2013-02-03T22:00:00Z" />
+<Data Value="20" TimeFrom="2013-02-03T22:00:00Z" TimeTo="2013-02-03T23:00:00Z" />
+<Data Value="59" TimeFrom="2013-02-03T23:00:00Z" TimeTo="2013-02-04T00:00:00Z" />
+<Data Value="49" TimeFrom="2013-02-04T00:00:00Z" TimeTo="2013-02-04T01:00:00Z" />
+<Data Value="12" TimeFrom="2013-02-04T01:00:00Z" TimeTo="2013-02-04T02:00:00Z" />
+<Data Value="61" TimeFrom="2013-02-04T02:00:00Z" TimeTo="2013-02-04T03:00:00Z" />
+<Data Value="80" TimeFrom="2013-02-04T03:00:00Z" TimeTo="2013-02-04T04:00:00Z" />
+<Data Value="58" TimeFrom="2013-02-04T04:00:00Z" TimeTo="2013-02-04T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:24Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-04T05:00:00Z" TimeTo="2013-02-05T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22203" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="85" TimeFrom="2013-02-04T05:00:00Z" TimeTo="2013-02-04T06:00:00Z" />
+<Data Value="8" TimeFrom="2013-02-04T06:00:00Z" TimeTo="2013-02-04T07:00:00Z" />
+<Data Value="71" TimeFrom="2013-02-04T07:00:00Z" TimeTo="2013-02-04T08:00:00Z" />
+<Data Value="74" TimeFrom="2013-02-04T08:00:00Z" TimeTo="2013-02-04T09:00:00Z" />
+<Data Value="78" TimeFrom="2013-02-04T09:00:00Z" TimeTo="2013-02-04T10:00:00Z" />
+<Data Value="17" TimeFrom="2013-02-04T10:00:00Z" TimeTo="2013-02-04T11:00:00Z" />
+<Data Value="48" TimeFrom="2013-02-04T11:00:00Z" TimeTo="2013-02-04T12:00:00Z" />
+<Data Value="65" TimeFrom="2013-02-04T12:00:00Z" TimeTo="2013-02-04T13:00:00Z" />
+<Data Value="52" TimeFrom="2013-02-04T13:00:00Z" TimeTo="2013-02-04T14:00:00Z" />
+<Data Value="32" TimeFrom="2013-02-04T14:00:00Z" TimeTo="2013-02-04T15:00:00Z" />
+<Data Value="23" TimeFrom="2013-02-04T15:00:00Z" TimeTo="2013-02-04T16:00:00Z" />
+<Data Value="8" TimeFrom="2013-02-04T16:00:00Z" TimeTo="2013-02-04T17:00:00Z" />
+<Data Value="70" TimeFrom="2013-02-04T17:00:00Z" TimeTo="2013-02-04T18:00:00Z" />
+<Data Value="22" TimeFrom="2013-02-04T18:00:00Z" TimeTo="2013-02-04T19:00:00Z" />
+<Data Value="48" TimeFrom="2013-02-04T19:00:00Z" TimeTo="2013-02-04T20:00:00Z" />
+<Data Value="72" TimeFrom="2013-02-04T20:00:00Z" TimeTo="2013-02-04T21:00:00Z" />
+<Data Value="94" TimeFrom="2013-02-04T21:00:00Z" TimeTo="2013-02-04T22:00:00Z" />
+<Data Value="60" TimeFrom="2013-02-04T22:00:00Z" TimeTo="2013-02-04T23:00:00Z" />
+<Data Value="1" TimeFrom="2013-02-04T23:00:00Z" TimeTo="2013-02-05T00:00:00Z" />
+<Data Value="36" TimeFrom="2013-02-05T00:00:00Z" TimeTo="2013-02-05T01:00:00Z" />
+<Data Value="41" TimeFrom="2013-02-05T01:00:00Z" TimeTo="2013-02-05T02:00:00Z" />
+<Data Value="88" TimeFrom="2013-02-05T02:00:00Z" TimeTo="2013-02-05T03:00:00Z" />
+<Data Value="75" TimeFrom="2013-02-05T03:00:00Z" TimeTo="2013-02-05T04:00:00Z" />
+<Data Value="76" TimeFrom="2013-02-05T04:00:00Z" TimeTo="2013-02-05T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:24Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-05T05:00:00Z" TimeTo="2013-02-06T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22204" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="80" TimeFrom="2013-02-05T05:00:00Z" TimeTo="2013-02-05T06:00:00Z" />
+<Data Value="17" TimeFrom="2013-02-05T06:00:00Z" TimeTo="2013-02-05T07:00:00Z" />
+<Data Value="20" TimeFrom="2013-02-05T07:00:00Z" TimeTo="2013-02-05T08:00:00Z" />
+<Data Value="72" TimeFrom="2013-02-05T08:00:00Z" TimeTo="2013-02-05T09:00:00Z" />
+<Data Value="74" TimeFrom="2013-02-05T09:00:00Z" TimeTo="2013-02-05T10:00:00Z" />
+<Data Value="15" TimeFrom="2013-02-05T10:00:00Z" TimeTo="2013-02-05T11:00:00Z" />
+<Data Value="91" TimeFrom="2013-02-05T11:00:00Z" TimeTo="2013-02-05T12:00:00Z" />
+<Data Value="52" TimeFrom="2013-02-05T12:00:00Z" TimeTo="2013-02-05T13:00:00Z" />
+<Data Value="44" TimeFrom="2013-02-05T13:00:00Z" TimeTo="2013-02-05T14:00:00Z" />
+<Data Value="86" TimeFrom="2013-02-05T14:00:00Z" TimeTo="2013-02-05T15:00:00Z" />
+<Data Value="12" TimeFrom="2013-02-05T15:00:00Z" TimeTo="2013-02-05T16:00:00Z" />
+<Data Value="54" TimeFrom="2013-02-05T16:00:00Z" TimeTo="2013-02-05T17:00:00Z" />
+<Data Value="20" TimeFrom="2013-02-05T17:00:00Z" TimeTo="2013-02-05T18:00:00Z" />
+<Data Value="18" TimeFrom="2013-02-05T18:00:00Z" TimeTo="2013-02-05T19:00:00Z" />
+<Data Value="7" TimeFrom="2013-02-05T19:00:00Z" TimeTo="2013-02-05T20:00:00Z" />
+<Data Value="61" TimeFrom="2013-02-05T20:00:00Z" TimeTo="2013-02-05T21:00:00Z" />
+<Data Value="31" TimeFrom="2013-02-05T21:00:00Z" TimeTo="2013-02-05T22:00:00Z" />
+<Data Value="83" TimeFrom="2013-02-05T22:00:00Z" TimeTo="2013-02-05T23:00:00Z" />
+<Data Value="74" TimeFrom="2013-02-05T23:00:00Z" TimeTo="2013-02-06T00:00:00Z" />
+<Data Value="69" TimeFrom="2013-02-06T00:00:00Z" TimeTo="2013-02-06T01:00:00Z" />
+<Data Value="22" TimeFrom="2013-02-06T01:00:00Z" TimeTo="2013-02-06T02:00:00Z" />
+<Data Value="47" TimeFrom="2013-02-06T02:00:00Z" TimeTo="2013-02-06T03:00:00Z" />
+<Data Value="36" TimeFrom="2013-02-06T03:00:00Z" TimeTo="2013-02-06T04:00:00Z" />
+<Data Value="69" TimeFrom="2013-02-06T04:00:00Z" TimeTo="2013-02-06T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:25Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-06T05:00:00Z" TimeTo="2013-02-07T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22205" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="9" TimeFrom="2013-02-06T05:00:00Z" TimeTo="2013-02-06T06:00:00Z" />
+<Data Value="71" TimeFrom="2013-02-06T06:00:00Z" TimeTo="2013-02-06T07:00:00Z" />
+<Data Value="26" TimeFrom="2013-02-06T07:00:00Z" TimeTo="2013-02-06T08:00:00Z" />
+<Data Value="46" TimeFrom="2013-02-06T08:00:00Z" TimeTo="2013-02-06T09:00:00Z" />
+<Data Value="1" TimeFrom="2013-02-06T09:00:00Z" TimeTo="2013-02-06T10:00:00Z" />
+<Data Value="49" TimeFrom="2013-02-06T10:00:00Z" TimeTo="2013-02-06T11:00:00Z" />
+<Data Value="13" TimeFrom="2013-02-06T11:00:00Z" TimeTo="2013-02-06T12:00:00Z" />
+<Data Value="63" TimeFrom="2013-02-06T12:00:00Z" TimeTo="2013-02-06T13:00:00Z" />
+<Data Value="5" TimeFrom="2013-02-06T13:00:00Z" TimeTo="2013-02-06T14:00:00Z" />
+<Data Value="50" TimeFrom="2013-02-06T14:00:00Z" TimeTo="2013-02-06T15:00:00Z" />
+<Data Value="71" TimeFrom="2013-02-06T15:00:00Z" TimeTo="2013-02-06T16:00:00Z" />
+<Data Value="98" TimeFrom="2013-02-06T16:00:00Z" TimeTo="2013-02-06T17:00:00Z" />
+<Data Value="58" TimeFrom="2013-02-06T17:00:00Z" TimeTo="2013-02-06T18:00:00Z" />
+<Data Value="34" TimeFrom="2013-02-06T18:00:00Z" TimeTo="2013-02-06T19:00:00Z" />
+<Data Value="36" TimeFrom="2013-02-06T19:00:00Z" TimeTo="2013-02-06T20:00:00Z" />
+<Data Value="24" TimeFrom="2013-02-06T20:00:00Z" TimeTo="2013-02-06T21:00:00Z" />
+<Data Value="92" TimeFrom="2013-02-06T21:00:00Z" TimeTo="2013-02-06T22:00:00Z" />
+<Data Value="46" TimeFrom="2013-02-06T22:00:00Z" TimeTo="2013-02-06T23:00:00Z" />
+<Data Value="83" TimeFrom="2013-02-06T23:00:00Z" TimeTo="2013-02-07T00:00:00Z" />
+<Data Value="62" TimeFrom="2013-02-07T00:00:00Z" TimeTo="2013-02-07T01:00:00Z" />
+<Data Value="84" TimeFrom="2013-02-07T01:00:00Z" TimeTo="2013-02-07T02:00:00Z" />
+<Data Value="43" TimeFrom="2013-02-07T02:00:00Z" TimeTo="2013-02-07T03:00:00Z" />
+<Data Value="7" TimeFrom="2013-02-07T03:00:00Z" TimeTo="2013-02-07T04:00:00Z" />
+<Data Value="51" TimeFrom="2013-02-07T04:00:00Z" TimeTo="2013-02-07T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:25Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-07T05:00:00Z" TimeTo="2013-02-08T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22206" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="19" TimeFrom="2013-02-07T05:00:00Z" TimeTo="2013-02-07T06:00:00Z" />
+<Data Value="49" TimeFrom="2013-02-07T06:00:00Z" TimeTo="2013-02-07T07:00:00Z" />
+<Data Value="98" TimeFrom="2013-02-07T07:00:00Z" TimeTo="2013-02-07T08:00:00Z" />
+<Data Value="25" TimeFrom="2013-02-07T08:00:00Z" TimeTo="2013-02-07T09:00:00Z" />
+<Data Value="69" TimeFrom="2013-02-07T09:00:00Z" TimeTo="2013-02-07T10:00:00Z" />
+<Data Value="22" TimeFrom="2013-02-07T10:00:00Z" TimeTo="2013-02-07T11:00:00Z" />
+<Data Value="77" TimeFrom="2013-02-07T11:00:00Z" TimeTo="2013-02-07T12:00:00Z" />
+<Data Value="51" TimeFrom="2013-02-07T12:00:00Z" TimeTo="2013-02-07T13:00:00Z" />
+<Data Value="44" TimeFrom="2013-02-07T13:00:00Z" TimeTo="2013-02-07T14:00:00Z" />
+<Data Value="25" TimeFrom="2013-02-07T14:00:00Z" TimeTo="2013-02-07T15:00:00Z" />
+<Data Value="21" TimeFrom="2013-02-07T15:00:00Z" TimeTo="2013-02-07T16:00:00Z" />
+<Data Value="92" TimeFrom="2013-02-07T16:00:00Z" TimeTo="2013-02-07T17:00:00Z" />
+<Data Value="25" TimeFrom="2013-02-07T17:00:00Z" TimeTo="2013-02-07T18:00:00Z" />
+<Data Value="45" TimeFrom="2013-02-07T18:00:00Z" TimeTo="2013-02-07T19:00:00Z" />
+<Data Value="27" TimeFrom="2013-02-07T19:00:00Z" TimeTo="2013-02-07T20:00:00Z" />
+<Data Value="11" TimeFrom="2013-02-07T20:00:00Z" TimeTo="2013-02-07T21:00:00Z" />
+<Data Value="67" TimeFrom="2013-02-07T21:00:00Z" TimeTo="2013-02-07T22:00:00Z" />
+<Data Value="30" TimeFrom="2013-02-07T22:00:00Z" TimeTo="2013-02-07T23:00:00Z" />
+<Data Value="95" TimeFrom="2013-02-07T23:00:00Z" TimeTo="2013-02-08T00:00:00Z" />
+<Data Value="87" TimeFrom="2013-02-08T00:00:00Z" TimeTo="2013-02-08T01:00:00Z" />
+<Data Value="63" TimeFrom="2013-02-08T01:00:00Z" TimeTo="2013-02-08T02:00:00Z" />
+<Data Value="37" TimeFrom="2013-02-08T02:00:00Z" TimeTo="2013-02-08T03:00:00Z" />
+<Data Value="21" TimeFrom="2013-02-08T03:00:00Z" TimeTo="2013-02-08T04:00:00Z" />
+<Data Value="57" TimeFrom="2013-02-08T04:00:00Z" TimeTo="2013-02-08T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:25Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-08T05:00:00Z" TimeTo="2013-02-09T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22207" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="36" TimeFrom="2013-02-08T05:00:00Z" TimeTo="2013-02-08T06:00:00Z" />
+<Data Value="42" TimeFrom="2013-02-08T06:00:00Z" TimeTo="2013-02-08T07:00:00Z" />
+<Data Value="59" TimeFrom="2013-02-08T07:00:00Z" TimeTo="2013-02-08T08:00:00Z" />
+<Data Value="53" TimeFrom="2013-02-08T08:00:00Z" TimeTo="2013-02-08T09:00:00Z" />
+<Data Value="73" TimeFrom="2013-02-08T09:00:00Z" TimeTo="2013-02-08T10:00:00Z" />
+<Data Value="23" TimeFrom="2013-02-08T10:00:00Z" TimeTo="2013-02-08T11:00:00Z" />
+<Data Value="23" TimeFrom="2013-02-08T11:00:00Z" TimeTo="2013-02-08T12:00:00Z" />
+<Data Value="9" TimeFrom="2013-02-08T12:00:00Z" TimeTo="2013-02-08T13:00:00Z" />
+<Data Value="25" TimeFrom="2013-02-08T13:00:00Z" TimeTo="2013-02-08T14:00:00Z" />
+<Data Value="38" TimeFrom="2013-02-08T14:00:00Z" TimeTo="2013-02-08T15:00:00Z" />
+<Data Value="38" TimeFrom="2013-02-08T15:00:00Z" TimeTo="2013-02-08T16:00:00Z" />
+<Data Value="20" TimeFrom="2013-02-08T16:00:00Z" TimeTo="2013-02-08T17:00:00Z" />
+<Data Value="62" TimeFrom="2013-02-08T17:00:00Z" TimeTo="2013-02-08T18:00:00Z" />
+<Data Value="49" TimeFrom="2013-02-08T18:00:00Z" TimeTo="2013-02-08T19:00:00Z" />
+<Data Value="19" TimeFrom="2013-02-08T19:00:00Z" TimeTo="2013-02-08T20:00:00Z" />
+<Data Value="17" TimeFrom="2013-02-08T20:00:00Z" TimeTo="2013-02-08T21:00:00Z" />
+<Data Value="20" TimeFrom="2013-02-08T21:00:00Z" TimeTo="2013-02-08T22:00:00Z" />
+<Data Value="59" TimeFrom="2013-02-08T22:00:00Z" TimeTo="2013-02-08T23:00:00Z" />
+<Data Value="5" TimeFrom="2013-02-08T23:00:00Z" TimeTo="2013-02-09T00:00:00Z" />
+<Data Value="46" TimeFrom="2013-02-09T00:00:00Z" TimeTo="2013-02-09T01:00:00Z" />
+<Data Value="88" TimeFrom="2013-02-09T01:00:00Z" TimeTo="2013-02-09T02:00:00Z" />
+<Data Value="17" TimeFrom="2013-02-09T02:00:00Z" TimeTo="2013-02-09T03:00:00Z" />
+<Data Value="58" TimeFrom="2013-02-09T03:00:00Z" TimeTo="2013-02-09T04:00:00Z" />
+<Data Value="96" TimeFrom="2013-02-09T04:00:00Z" TimeTo="2013-02-09T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:25Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-09T05:00:00Z" TimeTo="2013-02-10T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22208" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="11" TimeFrom="2013-02-09T05:00:00Z" TimeTo="2013-02-09T06:00:00Z" />
+<Data Value="86" TimeFrom="2013-02-09T06:00:00Z" TimeTo="2013-02-09T07:00:00Z" />
+<Data Value="6" TimeFrom="2013-02-09T07:00:00Z" TimeTo="2013-02-09T08:00:00Z" />
+<Data Value="0" TimeFrom="2013-02-09T08:00:00Z" TimeTo="2013-02-09T09:00:00Z" />
+<Data Value="14" TimeFrom="2013-02-09T09:00:00Z" TimeTo="2013-02-09T10:00:00Z" />
+<Data Value="78" TimeFrom="2013-02-09T10:00:00Z" TimeTo="2013-02-09T11:00:00Z" />
+<Data Value="44" TimeFrom="2013-02-09T11:00:00Z" TimeTo="2013-02-09T12:00:00Z" />
+<Data Value="4" TimeFrom="2013-02-09T12:00:00Z" TimeTo="2013-02-09T13:00:00Z" />
+<Data Value="1" TimeFrom="2013-02-09T13:00:00Z" TimeTo="2013-02-09T14:00:00Z" />
+<Data Value="28" TimeFrom="2013-02-09T14:00:00Z" TimeTo="2013-02-09T15:00:00Z" />
+<Data Value="1" TimeFrom="2013-02-09T15:00:00Z" TimeTo="2013-02-09T16:00:00Z" />
+<Data Value="81" TimeFrom="2013-02-09T16:00:00Z" TimeTo="2013-02-09T17:00:00Z" />
+<Data Value="55" TimeFrom="2013-02-09T17:00:00Z" TimeTo="2013-02-09T18:00:00Z" />
+<Data Value="12" TimeFrom="2013-02-09T18:00:00Z" TimeTo="2013-02-09T19:00:00Z" />
+<Data Value="99" TimeFrom="2013-02-09T19:00:00Z" TimeTo="2013-02-09T20:00:00Z" />
+<Data Value="18" TimeFrom="2013-02-09T20:00:00Z" TimeTo="2013-02-09T21:00:00Z" />
+<Data Value="5" TimeFrom="2013-02-09T21:00:00Z" TimeTo="2013-02-09T22:00:00Z" />
+<Data Value="68" TimeFrom="2013-02-09T22:00:00Z" TimeTo="2013-02-09T23:00:00Z" />
+<Data Value="69" TimeFrom="2013-02-09T23:00:00Z" TimeTo="2013-02-10T00:00:00Z" />
+<Data Value="1" TimeFrom="2013-02-10T00:00:00Z" TimeTo="2013-02-10T01:00:00Z" />
+<Data Value="71" TimeFrom="2013-02-10T01:00:00Z" TimeTo="2013-02-10T02:00:00Z" />
+<Data Value="61" TimeFrom="2013-02-10T02:00:00Z" TimeTo="2013-02-10T03:00:00Z" />
+<Data Value="94" TimeFrom="2013-02-10T03:00:00Z" TimeTo="2013-02-10T04:00:00Z" />
+<Data Value="38" TimeFrom="2013-02-10T04:00:00Z" TimeTo="2013-02-10T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test><?xml version="1.0"?>
+  <Test xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Number No="123" />
+    <Date Date="2014-02-28T20:26:25Z" />
+    <Sender ID="4563780" Code="112" Label="Mine" Role="Me" />
+    <Receiver ID="474859430" Code="112" Label="Mine" Role="Me" />
+    <Type Code="Testing" />
+    <Period TimeFrom="2013-02-10T05:00:00Z" TimeTo="2013-02-11T05:00:00Z" />
+    <Contract ID="123456" />
+  </Header>
+<Block>
+    <Location ID="HTWK" CodeAgency="112" Qualifier="32" />
+    <Contract ContractID="22209" />
+    <DataSeries Type="SecTest" Qualifier="Mine" Unit="Ampere" Interval="44">
+<Data Value="93" TimeFrom="2013-02-10T05:00:00Z" TimeTo="2013-02-10T06:00:00Z" />
+<Data Value="14" TimeFrom="2013-02-10T06:00:00Z" TimeTo="2013-02-10T07:00:00Z" />
+<Data Value="14" TimeFrom="2013-02-10T07:00:00Z" TimeTo="2013-02-10T08:00:00Z" />
+<Data Value="61" TimeFrom="2013-02-10T08:00:00Z" TimeTo="2013-02-10T09:00:00Z" />
+<Data Value="26" TimeFrom="2013-02-10T09:00:00Z" TimeTo="2013-02-10T10:00:00Z" />
+<Data Value="60" TimeFrom="2013-02-10T10:00:00Z" TimeTo="2013-02-10T11:00:00Z" />
+<Data Value="47" TimeFrom="2013-02-10T11:00:00Z" TimeTo="2013-02-10T12:00:00Z" />
+<Data Value="40" TimeFrom="2013-02-10T12:00:00Z" TimeTo="2013-02-10T13:00:00Z" />
+<Data Value="71" TimeFrom="2013-02-10T13:00:00Z" TimeTo="2013-02-10T14:00:00Z" />
+<Data Value="92" TimeFrom="2013-02-10T14:00:00Z" TimeTo="2013-02-10T15:00:00Z" />
+<Data Value="37" TimeFrom="2013-02-10T15:00:00Z" TimeTo="2013-02-10T16:00:00Z" />
+<Data Value="85" TimeFrom="2013-02-10T16:00:00Z" TimeTo="2013-02-10T17:00:00Z" />
+<Data Value="9" TimeFrom="2013-02-10T17:00:00Z" TimeTo="2013-02-10T18:00:00Z" />
+<Data Value="41" TimeFrom="2013-02-10T18:00:00Z" TimeTo="2013-02-10T19:00:00Z" />
+<Data Value="2" TimeFrom="2013-02-10T19:00:00Z" TimeTo="2013-02-10T20:00:00Z" />
+<Data Value="95" TimeFrom="2013-02-10T20:00:00Z" TimeTo="2013-02-10T21:00:00Z" />
+<Data Value="84" TimeFrom="2013-02-10T21:00:00Z" TimeTo="2013-02-10T22:00:00Z" />
+<Data Value="99" TimeFrom="2013-02-10T22:00:00Z" TimeTo="2013-02-10T23:00:00Z" />
+<Data Value="37" TimeFrom="2013-02-10T23:00:00Z" TimeTo="2013-02-11T00:00:00Z" />
+<Data Value="59" TimeFrom="2013-02-11T00:00:00Z" TimeTo="2013-02-11T01:00:00Z" />
+<Data Value="45" TimeFrom="2013-02-11T01:00:00Z" TimeTo="2013-02-11T02:00:00Z" />
+<Data Value="4" TimeFrom="2013-02-11T02:00:00Z" TimeTo="2013-02-11T03:00:00Z" />
+<Data Value="85" TimeFrom="2013-02-11T03:00:00Z" TimeTo="2013-02-11T04:00:00Z" />
+<Data Value="92" TimeFrom="2013-02-11T04:00:00Z" TimeTo="2013-02-11T05:00:00Z" />
+</DataSeries>
+  </Block>
+  </Test>
